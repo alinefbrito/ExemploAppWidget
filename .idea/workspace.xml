@@ -33,57 +33,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fda0e115-ac75-43c7-b3c7-b61bc97ed6f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/appwidgetsample/ExemploCustomView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_clear_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_clear_opaque_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/res/drawable/yoda_gizmo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/appwidgetsample/NewAppWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/appwidgetsample/ExemploWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/new_app_widget.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/new_app_widget.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/new_app_widget_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/new_app_widget_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/java/com/example/android/fragmentcommunicate/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/java/com/example/android/fragmentcommunicate/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/java/com/example/android/fragmentcommunicate/SimpleFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/java/com/example/android/fragmentcommunicate/ExemploFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/res/layout/fragment_simple.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/res/layout/fragment_simple.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentCommunicate/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentCommunicate/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentCommunicate/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentCommunicate/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentCommunicate/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/java/com/example/android/fragmentexample/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/java/com/example/android/fragmentexample/SimpleFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/drawable/beatles_anthology_box.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/layout/fragment_simple.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentExample2/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/appwidgetsample/ExemploCustomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/appwidgetsample/ExemploCustomView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +57,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rlduFkc56balPvPcgF4RcG4gza" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -115,9 +68,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android-custom-viewC:/Users/aline/OneDrive - Etec Centro Paula Souza/Aulas/ETECBG/TM/Exemplos/AppWidgetSample/app/src/main/java/com/example/android/appwidgetsample/ExemploCustomView.java_SELECTED" value="ExemploCustomView" />
     <property name="android-custom-viewC:/Users/aline/OneDrive - Etec Centro Paula Souza/Aulas/ETECBG/TM/Exemplos/android-advanced/AppWidgetSample/app/src/main/java/com/example/android/appwidgetsample/ExemploCustomView.java_SELECTED" value="ExemploCustomView" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -221,9 +175,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1620160902527" />
-    <state x="539" y="262" key="Github.ShareDialog" timestamp="1620160863709">
+    <state x="539" y="262" key="Github.ShareDialog" timestamp="1620761242914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="539" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1620160863709" />
+    <state x="539" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1620761242914" />
+    <state x="262" y="62" key="Github.UntrackedFilesDialog" timestamp="1620761384670">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="262" y="62" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1620761384670" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1620761192813">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1620761192813" />
   </component>
 </project>

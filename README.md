@@ -1,44 +1,42 @@
-AppWidgetSample (Solution Code)
-===============================
+# App Widget e Custom View
+Adaptado de [Android Advanced Training](https://developer.android.com/courses/advanced-training/overview)
 
-AppWidgetSample demonstrates how to create and use Android app widgets, 
-including how to handle widget update requests and how to include button 
-actions in a widget.
+## Widget
 
-The main activity for this app is empty; all the functionality is in 
-the widget.
+Widgets de app são visualizações de aplicativos em miniatura que podem ser incorporadas em outros aplicativos (como a tela inicial) e receber atualizações periódicas. Essas visualizações são chamadas de "widgets" na interface do usuário, e é possível publicá-las com um provedor de widgets de app.
+[Documentação](https://developer.android.com/guide/topics/appwidgets?hl=pt-br)
 
-Pre-requisites
---------------
+Componentes de um Widget  :
+- Provider-info XML file
+	-  define os metadados  
+- arquivo de Layout XML para UI  
+- AppWidgetProvider 
+	- codigo Java
+- Activity de configuração (opcional)
 
-For this app you should be familiar with:
-* Creating, building, and running apps in Android Studio.
-* Sending and receiving broadcast intents.
-* Building and sending pending intents.
+## Custom View
 
+Uma Custom View pode ser definida como um componente que, diferentemente de uma view “tradicional”, terá o comportamento e a aparência esperada pelo desenvolvedor.
 
-Getting Started
----------------
+A princípio a criação de uma Custom View se dá de duas maneiras:
 
-1. Download and open this sample in Android Studio.
+1.  Criando uma classe que herde  da classe view, apenas criando um novo comportamento para ela.
+2.  Desenvolvendo um layout em XML com uma classe que controle seu comportamento.
 
+[Documentação](https://developer.android.com/guide/topics/ui/custom-components)
 
-License
--------
+### Caso 1 - Herança Classe View:
 
-Copyright 2017 Google, Inc.
+ - Criar uma nova classe Java  
+ - Implementar a herança de um elemento ou diretamente da classe View 
+ - No exemplo será uma Edit Text alterada com o X para limpar o texto  
+ - Após definir a herança implementar todos os contrutores necessário/ sugeridos  
+ - O preview será exibido  
+ - Na pasta drawables adicionar o icone X ( drawable -> add vector -> cliparte --> selecionar a forma)  
+ - Adicionar um icone preto e outro cinza ( opacidade 50%)  
+ - Define a variável de acesso ao icone  
+ - Cria um helper que instancia o icone - init()  
+ - Chama o helper nos contrutores  
+ - Se herdar da view prcisa desenhar a interface, sobrescrevendo o método onDraw  
+ - Quando herda de uma subclasse é possivel apenas sobrescrever para customizar
 
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
-
-  http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.

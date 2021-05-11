@@ -1,5 +1,6 @@
 package com.example.android.appwidgetsample;
 
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -13,18 +14,20 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-//criar uma nova classe Java
-// implementar a herança de um elemento ou diretamente da classe View
-//No exemplo será uma Edit Text alterada com o X para limpar o texto
-// Após definir a herança implementar todos os contrutores necessário/ sugeridos
-// O preview será exibido
-// Na pasta drawables adicionar o icone X ( drawable -> add vector -> cliparte --> selecionar a forma)
-//Adicionar um icone preto e outro cinza ( opacidade 50%)
-//define a variável de acesso ao icone
-// cria um helper que instancia o icone - init()
-//chama o helper nos contrutores
-//se herdar da view prcisa desenhar a interface, sobrescrevendo o método onDraw
-//quando herda de uma subclasse é possivel apenas sobrescrever para customizar
+/*
+        - Criar uma nova classe Java
+        - Implementar a herança de um elemento ou diretamente da classe View
+        - No exemplo será uma Edit Text alterada com o X para limpar o texto
+        - Após definir a herança implementar todos os contrutores necessário/ sugeridos
+        - O preview será exibido
+        - Na pasta drawables adicionar o icone X ( drawable -> add vector -> cliparte --> selecionar a forma)
+        - Adicionar um icone preto e outro cinza ( opacidade 50%)
+        - Define a variável de acesso ao icone
+        - Cria um helper que instancia o icone - init()
+        - Chama o helper nos contrutores
+        - Se herdar da view prcisa desenhar a interface, sobrescrevendo o método onDraw
+        - Quando herda de uma subclasse é possivel apenas sobrescrever para customizar
+   */
 public class ExemploCustomView extends AppCompatEditText {
 
 
