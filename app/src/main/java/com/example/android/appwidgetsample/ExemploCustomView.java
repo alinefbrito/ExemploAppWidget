@@ -1,7 +1,6 @@
 package com.example.android.appwidgetsample;
 
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -13,6 +12,8 @@ import android.text.TextWatcher;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /*
         - Criar uma nova classe Java
@@ -30,9 +31,10 @@ import android.view.View;
    */
 public class ExemploCustomView extends AppCompatEditText {
 
-
+//define o drawable q será instanciado
     Drawable mClearButtonImage;
 
+    //construtores obrigatórios da classe
     public ExemploCustomView(Context context) {
         super(context);
         init();
@@ -49,63 +51,65 @@ public class ExemploCustomView extends AppCompatEditText {
         init();
     }
 
+    //metodo para inicialização do componente
     private void init() {
-        // Initialize Drawable member variable.
-        mClearButtonImage =
-                ResourcesCompat.getDrawable(getResources(),
-                        R.drawable.ic_baseline_clear_opaque_24, null);
+        // Inicializa o Drawable
+        mClearButtonImage = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_baseline_clear_opaque_24, null);
 
-        // If the X (clear) button is tapped, clear the text.
+        // define a ação do clique do botãoclique do botão.
         setOnTouchListener(new OnTouchListener() {
-            @SuppressLint("ClickableViewAccessibility")
+
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                // Use the getCompoundDrawables()[2] expression to check
-                // if the drawable is on the "end" of text [2].
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                // getCompoundDrawables()[2] :retorna um array de Drawables contendo start, top, end e bottom
+                // Se o Drawabale estiver no final do texto: [2].
+
                     if ((getCompoundDrawablesRelative()[2] != null)) {
-                        float clearButtonStart; // Used for LTR languages
-                        float clearButtonEnd;  // Used for RTL languages
-                        boolean isClearButtonClicked = false;
-                        // Detect the touch in RTL or LTR layout direction.
+                        float clearButtonStart; // Linguagens LTR
+                        float clearButtonEnd;  //Linguagens RTL
+                        //um boolean que pode ser atualizado dinamicamente
+                        AtomicBoolean isClearButtonClicked = new AtomicBoolean(false);
+                        // detecta a direção do toque
                         if (getLayoutDirection() == LAYOUT_DIRECTION_RTL) {
-                            // If RTL, get the end of the button on the left side.
+                            // Se RTL, cola o botão na esquerda
                             clearButtonEnd = mClearButtonImage
                                     .getIntrinsicWidth() + getPaddingStart();
-                            // If the touch occurred before the end of the button,
-                            // set isClearButtonClicked to true.
+                            // se o toque ocorrer antes do fim do botão
+                            //  isClearButtonClicked definido como true.
                             if (event.getX() < clearButtonEnd) {
-                                isClearButtonClicked = true;
+                                isClearButtonClicked.set(true);
                             }
                         } else {
-                            // Layout is LTR.
-                            // Get the start of the button on the right side.
+                            // Se o layout é LTR.
+
                             clearButtonStart = (getWidth() - getPaddingEnd()
                                     - mClearButtonImage.getIntrinsicWidth());
-                            // If the touch occurred after the start of the button,
-                            // set isClearButtonClicked to true.
+                            // Se o toque ocorrer depois do inicio do botão
+                            // isClearButtonClicked = true.
                             if (event.getX() > clearButtonStart) {
-                                isClearButtonClicked = true;
+                                isClearButtonClicked.set(true);
                             }
-                        }
-                        // Check for actions if the button is tapped.
-                        if (isClearButtonClicked) {
-                            // Check for ACTION_DOWN (always occurs before ACTION_UP).
+
+                        // verifica o clique do botão
+                        if (isClearButtonClicked.get()) {
+                            // Verifica o ACTION_DOWN (sempre ocorre antes do ACTION_UP).
                             if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                                // Switch to the black version of clear button.
+                                // troca a versão do botão
                                 mClearButtonImage =
                                         ResourcesCompat.getDrawable(getResources(),
                                                 R.drawable.ic_baseline_clear_24, null);
                                 showClearButton();
                             }
-                            // Check for ACTION_UP.
+                            // Verifica o  ACTION_UP.
                             if (event.getAction() == MotionEvent.ACTION_UP) {
-                                // Switch to the opaque version of clear button.
+                                // Troca pela versão opaca
                                 mClearButtonImage =
                                         ResourcesCompat.getDrawable(getResources(),
                                                 R.drawable.ic_baseline_clear_opaque_24, null);
-                                // Clear the text and hide the clear button.
+                                // limpa o texto
                                 getText().clear();
+                                //esconde o botão
                                 hideClearButton();
                                 return true;
                             }
@@ -118,7 +122,7 @@ public class ExemploCustomView extends AppCompatEditText {
             }
         });
 
-        // If the text changes, show or hide the X (clear) button.
+        // Se o texto muda mostra/oculta o botão
         addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s,
@@ -139,32 +143,30 @@ public class ExemploCustomView extends AppCompatEditText {
         });
     }
 
-    /**
-     * Shows the clear (X) button.
-     */
-
+    //exibição do botão
     private void showClearButton() {
-        // Sets the Drawables (if any) to appear to the left of,
-        // above, to the right of, and below the text.
+        // Define  aposição do drawable
+        //exige versão minima do sdk
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             setCompoundDrawablesRelativeWithIntrinsicBounds
-                    (null,                      // Start of text.
-                            null,               // Top of text.
-                            mClearButtonImage,  // End of text.
-                            null);              // Below text.
+                    (null,                      // Inicio do texto
+                            null,               // Topo do texto.
+                            mClearButtonImage,  // Fim do Texto
+                            null);              // Abaixo do texto
         }
     }
 
     /**
-     * Hides the clear button.
+     * oculta o botão
      */
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     private void hideClearButton() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+
             setCompoundDrawablesRelativeWithIntrinsicBounds
-                    (null,             // Start of text.
-                            null,      // Top of text.
-                            null,      // End of text.
-                            null);     // Below text.
+                    (null,             // Inicio do texto
+                            null,      // Topo do texto
+                            null,      // Fim do texto
+                            null);     // Abaixo do texto.
         }
-    }
+
 }

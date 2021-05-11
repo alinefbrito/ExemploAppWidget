@@ -25,7 +25,7 @@ A princípio a criação de uma Custom View se dá de duas maneiras:
 
 [Documentação](https://developer.android.com/guide/topics/ui/custom-components)
 
-### Caso 1 - Herança Classe View:
+### Caso 1 - Customização de um Componente:
 
  - Criar uma nova classe Java  
  - Implementar a herança de um elemento ou diretamente da classe View 

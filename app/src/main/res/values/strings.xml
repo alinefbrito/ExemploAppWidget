@@ -16,7 +16,7 @@ limitations under the License. -->
     <string name="app_name">AppWidgetSample</string>
 
 
-    <string name="activity_text">Activity sem funcionalidade.</string>
+    <string name="activity_text">Edit text com Botão limpar</string>
 
 
     <string name="widget_id_label">Widget ID</string>

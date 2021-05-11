@@ -36,8 +36,12 @@ limitations under the License. -->
 
     <com.example.android.appwidgetsample.ExemploCustomView
         android:id="@+id/exemploCustomView"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content" />
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/textview_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
 
