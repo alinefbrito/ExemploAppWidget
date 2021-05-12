@@ -31,7 +31,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
    */
 public class ExemploCustomView extends AppCompatEditText {
 
-//define o drawable q será instanciado
+    //define o drawable q será instanciado
     Drawable mClearButtonImage;
 
     //construtores obrigatórios da classe
@@ -59,37 +59,38 @@ public class ExemploCustomView extends AppCompatEditText {
         // define a ação do clique do botãoclique do botão.
         setOnTouchListener(new OnTouchListener() {
 
+
             @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 // getCompoundDrawables()[2] :retorna um array de Drawables contendo start, top, end e bottom
                 // Se o Drawabale estiver no final do texto: [2].
 
-                    if ((getCompoundDrawablesRelative()[2] != null)) {
-                        float clearButtonStart; // Linguagens LTR
-                        float clearButtonEnd;  //Linguagens RTL
-                        //um boolean que pode ser atualizado dinamicamente
-                        AtomicBoolean isClearButtonClicked = new AtomicBoolean(false);
-                        // detecta a direção do toque
-                        if (getLayoutDirection() == LAYOUT_DIRECTION_RTL) {
-                            // Se RTL, cola o botão na esquerda
-                            clearButtonEnd = mClearButtonImage
-                                    .getIntrinsicWidth() + getPaddingStart();
-                            // se o toque ocorrer antes do fim do botão
-                            //  isClearButtonClicked definido como true.
-                            if (event.getX() < clearButtonEnd) {
-                                isClearButtonClicked.set(true);
-                            }
-                        } else {
-                            // Se o layout é LTR.
+                if ((getCompoundDrawablesRelative()[2] != null)) {
+                    float clearButtonStart; // Linguagens LTR
+                    float clearButtonEnd;  //Linguagens RTL
+                    //um boolean que pode ser atualizado dinamicamente
+                    AtomicBoolean isClearButtonClicked = new AtomicBoolean(false);
+                    // detecta a direção do toque
+                    if (getLayoutDirection() == LAYOUT_DIRECTION_RTL) {
+                        // Se RTL, cola o botão na esquerda
+                        clearButtonEnd = mClearButtonImage
+                                .getIntrinsicWidth() + getPaddingStart();
+                        // se o toque ocorrer antes do fim do botão
+                        //  isClearButtonClicked definido como true.
+                        if (event.getX() < clearButtonEnd) {
+                            isClearButtonClicked.set(true);
+                        }
+                    } else {
+                        // Se o layout é LTR.
 
-                            clearButtonStart = (getWidth() - getPaddingEnd()
-                                    - mClearButtonImage.getIntrinsicWidth());
-                            // Se o toque ocorrer depois do inicio do botão
-                            // isClearButtonClicked = true.
-                            if (event.getX() > clearButtonStart) {
-                                isClearButtonClicked.set(true);
-                            }
+                        clearButtonStart = (getWidth() - getPaddingEnd()
+                                - mClearButtonImage.getIntrinsicWidth());
+                        // Se o toque ocorrer depois do inicio do botão
+                        // isClearButtonClicked = true.
+                        if (event.getX() > clearButtonStart) {
+                            isClearButtonClicked.set(true);
+                        }
 
                         // verifica o clique do botão
                         if (isClearButtonClicked.get()) {
@@ -162,11 +163,11 @@ public class ExemploCustomView extends AppCompatEditText {
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     private void hideClearButton() {
 
-            setCompoundDrawablesRelativeWithIntrinsicBounds
-                    (null,             // Inicio do texto
-                            null,      // Topo do texto
-                            null,      // Fim do texto
-                            null);     // Abaixo do texto.
-        }
+        setCompoundDrawablesRelativeWithIntrinsicBounds
+                (null,             // Inicio do texto
+                        null,      // Topo do texto
+                        null,      // Fim do texto
+                        null);     // Abaixo do texto.
+    }
 
 }
