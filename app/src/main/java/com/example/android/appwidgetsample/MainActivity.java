@@ -17,6 +17,9 @@ package com.example.android.appwidgetsample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 /**
  * AppWidgetSample demonstrates app widgets, including:
@@ -29,9 +32,25 @@ import android.os.Bundle;
  */
 public class MainActivity extends AppCompatActivity {
 
+    ExemploNewView env;
+    ExemploCustomView txt;
+    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        txt = (ExemploCustomView)findViewById(R.id.exemploCustomView);
+        env = (ExemploNewView)findViewById(R.id.exemploNewView);
+        btn = (Button) findViewById(R.id.button);
+        btn.setOnClickListener(new View.OnClickListener(){
+              public void onClick(View v) {
+                int vlr = env.getValor();
+                String msg = new StringBuilder().append("Texto: ").append(txt.getText()).append(",  Opção selecionada: ").append(vlr).toString();
+                Toast t  = Toast.makeText(MainActivity.this, msg,Toast.LENGTH_SHORT);
+                t.show();
+            }
+        });
     }
+
+
 }

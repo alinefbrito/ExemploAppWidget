@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="NewView">
+        <attr name="onColor" format="reference|color" />
+        <attr name="offColor" format="reference|color" />
+    </declare-styleable>
+</resources>

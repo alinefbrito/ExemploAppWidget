@@ -22,26 +22,52 @@ limitations under the License. -->
 
     <!-- App layout is extremely minimal in this sample because all of the
     interesting stuff is in the widget. -->
+
     <TextView
         android:id="@+id/textview_message"
-        android:padding="@dimen/activity_vertical_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:padding="@dimen/activity_vertical_margin"
         android:text="@string/activity_text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/exemploCustomView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998" />
 
     <com.example.android.appwidgetsample.ExemploCustomView
         android:id="@+id/exemploCustomView"
         android:layout_width="374dp"
         android:layout_height="64dp"
-        app:layout_constraintBottom_toTopOf="@+id/textview_message"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_message" />
+
+    <com.example.android.appwidgetsample.ExemploNewView
+        android:id="@+id/exemploNewView"
+        android:layout_width="283dp"
+        android:layout_height="205dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/exemploCustomView"
+        app:layout_constraintVertical_bias="0.07"
+        app:offColor="@color/colorAccent"
+        app:onColor="@color/red1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exemploNewView" />
 
 </android.support.constraint.ConstraintLayout>
 

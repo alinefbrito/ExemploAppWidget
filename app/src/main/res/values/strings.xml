@@ -30,4 +30,6 @@ limitations under the License. -->
 
     <string name="date_count_format">%1$d @%2$s</string>
 
+    <string name="result"> Ver valores</string>
+
 </resources>
