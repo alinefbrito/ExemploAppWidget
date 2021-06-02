@@ -27,15 +27,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fda0e115-ac75-43c7-b3c7-b61bc97ed6f6" name="Default Changelist" comment="Otimizações e alteração layout Widget ( inclusão icone)">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/video/Screen_Recording_20210519-132644_AppWidgetSample.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" afterDir="false" />
+    <list default="true" id="fda0e115-ac75-43c7-b3c7-b61bc97ed6f6" name="Default Changelist" comment="Implementação e uso nova CustomView">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/docs/infos.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/appwidgetsample/ExemploNewView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/appwidgetsample/ExemploNewView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/appwidgetsample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/appwidgetsample/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
     <property name="android-custom-viewC:/Users/aline/OneDrive - Etec Centro Paula Souza/Aulas/ETECBG/TM/Exemplos/AppWidgetSample/app/src/main/java/com/example/android/appwidgetsample/ExemploNewView.java_SELECTED" value="ExemploNewView" />
     <property name="android-custom-viewC:/Users/aline/OneDrive - Etec Centro Paula Souza/Aulas/ETECBG/TM/Exemplos/android-advanced/AppWidgetSample/app/src/main/java/com/example/android/appwidgetsample/ExemploCustomView.java_SELECTED" value="ExemploCustomView" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/values" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ExemploImplicito" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -194,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620858304861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementação e uso nova CustomView">
+      <created>1621449211447</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621449211447</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +218,8 @@
     <MESSAGE value="Atualização nos comentários" />
     <MESSAGE value="Alteração nos comentários e cor do icone de exclusão. Inclusão dos prints da app" />
     <MESSAGE value="Otimizações e alteração layout Widget ( inclusão icone)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Otimizações e alteração layout Widget ( inclusão icone)" />
+    <MESSAGE value="Implementação e uso nova CustomView" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação e uso nova CustomView" />
   </component>
   <component name="WindowStateProjectService">
     <state x="435" y="188" key="#Notifications" timestamp="1620769254522">
@@ -240,6 +242,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="110" key="AndroidProcessChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1621438311338" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1622115524829">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1622115524829" />
     <state x="539" y="262" key="Github.ShareDialog" timestamp="1620761242914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -284,10 +290,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1620818743712" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1620858314908">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1621449314910">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1620858314908" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1621449314910" />
     <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1621393063544">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
