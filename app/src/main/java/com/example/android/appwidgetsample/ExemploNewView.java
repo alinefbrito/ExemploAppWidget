@@ -16,7 +16,7 @@ public class ExemploNewView extends View  {
     //define as variáveis necessárias para o elemento ( controle de discagem)
 
 
-    private static int SELECTION_COUNT = 4; // Contador de Seleções disponíveis
+    private static int SELECTION_COUNT = 6; // Contador de Seleções disponíveis
     private float mWidth;                   // largura.
     private float mHeight;                  // altura
     private Paint mTextPaint;               // desenhar elemento de texto
@@ -136,7 +136,7 @@ public class ExemploNewView extends View  {
         canvas.drawCircle(mWidth / 2, mHeight / 2, mRadius, mDialPaint);
         // Desenha os labels
         //posição  dinâmica
-        final float labelRadius = mRadius + 20;
+        final float labelRadius = mRadius + 75;
         StringBuffer label = mTempLabel;
         for (int i = 0; i < SELECTION_COUNT; i++) {
             //recupera as posições calculadas

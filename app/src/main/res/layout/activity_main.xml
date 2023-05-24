@@ -41,16 +41,21 @@ limitations under the License. -->
         android:layout_width="374dp"
         android:layout_height="64dp"
         android:layout_marginTop="6dp"
+        android:hint="@string/activity_text"
+        android:inputType="textUri"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_message" />
+        app:layout_constraintTop_toBottomOf="@+id/textview_message"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
 
     <com.example.android.appwidgetsample.ExemploNewView
         android:id="@+id/exemploNewView"
         android:layout_width="283dp"
         android:layout_height="205dp"
         android:clickable="false"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
